@@ -17,7 +17,7 @@ const About = (props: any): JSX.Element => {
       <div className="list-img">
         {props.data.map(
           (item: any, index: number) =>
-            index < 100 && (
+            index < 1000 && (
               <div className="img-item">
                 <img key={index} src={item.url} alt={item.title} />
               </div>
