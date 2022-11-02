@@ -30,9 +30,13 @@ a {
   box-shadow: 0 10px 15px #a8b4fc30;
   margin-bottom: 1rem;
 }
-
-.btn {
+.btn-purple {
   background: #faa7b7;
+}
+.btn-red {
+  background: #ea4c89;
+}
+.btn {
   color: #fff;
   font-weight: 700;
   padding: 10px 15px;
@@ -41,6 +45,7 @@ a {
   border: none;
   cursor: pointer;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .btn:hover {
@@ -52,12 +57,76 @@ a {
   margin-top: 2rem;
 }
 
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.images {
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+}
+
 .list-img {
   overflow: hidden;
   animation: show 0.8s ease;
   text-align: center;
   margin-top: 3rem;
   padding: 0 15px;
+}
+
+.product-content {
+  background: white;
+  width: 47vh;
+  padding: 30px;
+  border-radius: 20px;
+  margin-left: 0.7rem;
+}
+
+.product-img {
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.list-thumbnail {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.list-thumbnail img {
+  object-fit: cover;
+  margin-right: 0.7rem;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+  color: #473889;
+  font-size: 27px;
+  line-height: 17px;
+}
+
+.price.discount {
+  font-size: 20px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.mg-bt-2 {
+  margin-bottom: 2rem;
+}
+.mg-bt-1 {
+  margin-bottom: 1rem;
+}
+.images {
+  position: relative;
 }
 
 @keyframes show {

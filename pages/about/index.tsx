@@ -12,15 +12,17 @@ const About = (props: any): JSX.Element => {
       </Head>
       <h1>images</h1>
       <Link href={"/"}>
-        <button className="btn"> go to home</button>
+        <button className="btn btn-purple">back home</button>
       </Link>
       <div className="list-img">
         {props.data.map(
           (item: any, index: number) =>
-            index < 1000 && (
-              <div className="img-item">
-                <img key={index} src={item.url} alt={item.title} />
-              </div>
+            index < 77 && (
+              <Link href={"product"} key={index}>
+                <div className="img-item">
+                  <img src={item.url} alt={item.title} />
+                </div>
+              </Link>
             )
         )}
       </div>
